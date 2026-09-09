@@ -6,77 +6,70 @@
   <meta name="description" content="40-Day Speaking Mastery: Articulation + Strategic Public Speaking">
   <title>Speaking Mastery — 40-Day Program</title>
   <style>
-    :root{--bg:#f6f8fc;--panel:#fff;--text:#18212f;--muted:#667085;--accent:#2457e6;--border:#dfe5ef;--nav:286px}
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
-    a{color:var(--accent)} .top{position:sticky;top:0;z-index:20;height:64px;display:flex;align-items:center;gap:12px;padding:0 22px;background:rgba(255,255,255,.95);border-bottom:1px solid var(--border);backdrop-filter:blur(10px)}
-    .brand{font-weight:800;letter-spacing:-.02em}.badge{font-size:.78rem;border:1px solid #cbd8ff;background:#eef3ff;color:#183d9c;padding:5px 9px;border-radius:999px}
-    .menu{display:none;border:1px solid var(--border);background:#fff;border-radius:9px;padding:7px 10px;font-size:18px}
-    .layout{display:grid;grid-template-columns:var(--nav) minmax(0,1fr);max-width:1500px;margin:auto}
-    aside{position:sticky;top:64px;height:calc(100vh - 64px);overflow:auto;border-right:1px solid var(--border);background:#fbfcfe;padding:22px 16px}
-    nav h3{font-size:.75rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:10px 10px 8px}
-    nav a{display:block;text-decoration:none;color:#334155;padding:10px 12px;margin:3px 0;border-radius:9px;font-weight:600;font-size:.93rem}
-    nav a:hover,nav a.active{background:#eaf0ff;color:#173fba}
-    main{padding:36px 42px 72px;min-width:0}
-    .hero{background:linear-gradient(135deg,#172554,#2457e6);color:white;padding:34px 36px;border-radius:18px;margin-bottom:26px;box-shadow:0 14px 34px rgba(17,40,90,.14)}
-    .hero h1{font-size:clamp(2rem,4vw,3.35rem);line-height:1.02;margin:.35rem 0 .7rem;letter-spacing:-.04em}.hero p{max-width:850px;color:#e8eeff;font-size:1.08rem}
-    .stats{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.stats span{font-size:.84rem;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.1);padding:7px 10px;border-radius:999px}
-    article{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:34px 38px;box-shadow:0 10px 25px rgba(20,40,80,.07)}
-    article h1,article h2,article h3{scroll-margin-top:82px;letter-spacing:-.02em} article h1{font-size:2.05rem;border-bottom:1px solid var(--border);padding-bottom:12px}
-    article h2{font-size:1.5rem;margin-top:2.2rem} article h3{font-size:1.13rem;margin-top:1.5rem} article p,article li{line-height:1.66}
-    article blockquote{margin:18px 0;padding:13px 17px;border-left:4px solid var(--accent);background:#f4f7ff;border-radius:0 9px 9px 0}
-    article table{width:100%;border-collapse:collapse;margin:18px 0;display:block;overflow:auto} article th,article td{border:1px solid var(--border);padding:9px 11px;text-align:left;white-space:nowrap} article th{background:#f4f6fa}
-    article code{background:#eef2f7;border-radius:5px;padding:2px 5px}.foot{text-align:center;color:var(--muted);font-size:.86rem;margin-top:18px}
-    @media(max-width:900px){.menu{display:block}.layout{display:block}aside{position:fixed;z-index:30;left:-305px;top:64px;width:286px;transition:left .2s;box-shadow:12px 0 30px rgba(0,0,0,.12)}aside.open{left:0}main{padding:22px 14px 56px}.hero{padding:26px 22px}article{padding:24px 20px}}
+    :root{--bg:#f6f8fc;--panel:#fff;--text:#18212f;--muted:#667085;--accent:#2457e6;--border:#dfe5ef;--nav:310px;--a:#0f766e;--b:#7c3aed}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}a{color:var(--accent)}
+    .top{position:sticky;top:0;z-index:20;height:64px;display:flex;align-items:center;gap:12px;padding:0 22px;background:rgba(255,255,255,.96);border-bottom:1px solid var(--border);backdrop-filter:blur(10px)}
+    .brand{font-weight:800;letter-spacing:-.02em}.badge{font-size:.78rem;border:1px solid #cbd8ff;background:#eef3ff;color:#183d9c;padding:5px 9px;border-radius:999px}.menu{display:none;border:1px solid var(--border);background:#fff;border-radius:9px;padding:7px 10px;font-size:18px}
+    .layout{display:grid;grid-template-columns:var(--nav) minmax(0,1fr);max-width:1500px;margin:auto}aside{position:sticky;top:64px;height:calc(100vh - 64px);overflow:auto;border-right:1px solid var(--border);background:#fbfcfe;padding:18px 16px}
+    nav h3{font-size:.75rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:14px 10px 7px}nav a{display:block;text-decoration:none;color:#334155;padding:8px 11px;margin:2px 0;border-radius:9px;font-weight:600;font-size:.91rem}nav a:hover,nav a.active{background:#eaf0ff;color:#173fba}
+    .focus{padding:12px;border:1px solid var(--border);border-radius:12px;background:white}.focus label{display:block;font-size:.73rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:8px}.seg{display:grid;grid-template-columns:1fr;gap:6px}.seg button{border:1px solid var(--border);background:#fff;padding:8px 9px;border-radius:8px;text-align:left;font-weight:700;color:#344054;cursor:pointer}.seg button.active{border-color:#9cb4ff;background:#edf2ff;color:#173fba}.seg small{display:block;font-weight:500;color:var(--muted);margin-top:2px}
+    main{padding:32px 42px 72px;min-width:0}.hero{background:linear-gradient(135deg,#172554,#2457e6);color:white;padding:30px 34px;border-radius:18px;margin-bottom:24px;box-shadow:0 14px 34px rgba(17,40,90,.14)}.hero h1{font-size:clamp(1.9rem,4vw,3.05rem);line-height:1.04;margin:.35rem 0 .7rem;letter-spacing:-.04em}.hero p{max-width:850px;color:#e8eeff;font-size:1.05rem}.stats{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}.stats span{font-size:.82rem;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.1);padding:6px 10px;border-radius:999px}
+    article{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:30px 36px;box-shadow:0 10px 25px rgba(20,40,80,.07)}article h1,article h2,article h3{letter-spacing:-.02em}article h1{font-size:2rem;border-bottom:1px solid var(--border);padding-bottom:12px}article h2{font-size:1.45rem;margin-top:2rem}article h3{font-size:1.12rem;margin-top:1.4rem}article p,article li{line-height:1.65}article blockquote{margin:18px 0;padding:13px 17px;border-left:4px solid var(--accent);background:#f4f7ff;border-radius:0 9px 9px 0}article table{width:100%;border-collapse:collapse;margin:18px 0;display:block;overflow:auto}article th,article td{border:1px solid var(--border);padding:9px 11px;text-align:left;white-space:nowrap}article th{background:#f4f6fa}article code{background:#eef2f7;border-radius:5px;padding:2px 5px}
+    .track-a{border-left:5px solid var(--a);padding-left:22px}.track-b{border-left:5px solid var(--b);padding-left:22px}.day-nav{display:flex;justify-content:space-between;gap:12px;margin:18px 0}.day-nav button{border:1px solid var(--border);background:white;padding:10px 14px;border-radius:9px;font-weight:700;cursor:pointer}.day-nav button:disabled{opacity:.4;cursor:not-allowed}
+    .resource-card{border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin:10px 0;background:#fbfcfe}.resource-card .rtype{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:var(--muted)}.resource-card a{font-weight:700;text-decoration:none}.video-wrap{position:relative;padding-top:56.25%;margin-top:10px;border-radius:10px;overflow:hidden;background:#0f172a}.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.open-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}.open-row a,.open-row button{border:1px solid var(--border);background:white;padding:7px 10px;border-radius:8px;font-weight:700;font-size:.88rem;cursor:pointer;color:var(--accent);text-decoration:none}
+    .foot{text-align:center;color:var(--muted);font-size:.86rem;margin-top:18px}.hidden{display:none!important}
+    @media(max-width:900px){.menu{display:block}.layout{display:block}aside{position:fixed;z-index:30;left:-325px;top:64px;width:310px;transition:left .2s;box-shadow:12px 0 30px rgba(0,0,0,.12)}aside.open{left:0}main{padding:20px 14px 56px}.hero{padding:24px 20px}article{padding:22px 18px}}
   </style>
 </head>
 <body>
-<header class="top"><button class="menu" id="menu">☰</button><div class="brand">Speaking Mastery</div><div class="badge">40-Day Dual Program</div></header>
+<header class="top"><button class="menu" id="menu" aria-label="Toggle navigation">☰</button><div class="brand">Speaking Mastery</div><div class="badge">40-Day Dual Program</div></header>
 <div class="layout">
   <aside id="sidebar"><nav>
-    <h3>Course</h3>
-    <a href="#program" data-file="PROGRAM.md" class="active">40-Day Program</a>
-    <a href="#resources" data-file="RESOURCES.md">Resource Library</a>
-    <a href="#tracker" data-file="TRACKER.md">Progress Tracker</a>
-    <a href="#sharing" data-file="SHARING.md">Sharing & Group Use</a>
-    <h3 style="margin-top:24px">Quick Jump</h3>
-    <a href="#phase-1-foundation">Phase 1 — Foundation</a>
-    <a href="#phase-2-control">Phase 2 — Control</a>
-    <a href="#phase-3-engagement">Phase 3 — Engagement</a>
-    <a href="#phase-4-application">Phase 4 — Application</a>
+    <div class="focus"><label>Choose your focus</label><div class="seg">
+      <button data-focus="both">Both tracks<small>20–30 min/day</small></button>
+      <button data-focus="a">A · Articulation<small>10–15 min/day</small></button>
+      <button data-focus="b">B · STAGE<small>10–15 min/day</small></button>
+    </div></div>
+    <h3>Course</h3><a href="#home" data-view="home">Course Home</a>
+    <h3>Days 1–10 · Foundation</h3><div id="days1"></div>
+    <h3>Days 11–20 · Control</h3><div id="days2"></div>
+    <h3>Days 21–30 · Engagement</h3><div id="days3"></div>
+    <h3>Days 31–40 · Application</h3><div id="days4"></div>
+    <h3>Reference</h3><a href="#resources" data-file="RESOURCES.md">Resource Library</a><a href="#tracker" data-file="TRACKER.md">Progress Tracker</a><a href="#sharing" data-file="SHARING.md">Sharing & Group Use</a>
   </nav></aside>
   <main>
-    <section class="hero">
-      <div class="badge" style="display:inline-block;background:rgba(255,255,255,.14);color:white;border-color:rgba(255,255,255,.24)">Articulation + Strategic Public Speaking</div>
-      <h1>40 Days to Clearer, Stronger Speaking</h1>
-      <p>Daily articulation and communication practice for clarity, confidence, impromptu speaking, storytelling, persuasion, meetings, presentations, and Q&amp;A.</p>
-      <div class="stats"><span>20–30 min/day</span><span>40 articulation sessions</span><span>40 communication sessions</span><span>Videos + references</span><span>5 checkpoints</span></div>
-    </section>
+    <section class="hero" id="hero"><div class="badge" style="display:inline-block;background:rgba(255,255,255,.14);color:white;border-color:rgba(255,255,255,.24)">Articulation + Strategic Public Speaking</div><h1 id="heroTitle">40 Days to Clearer, Stronger Speaking</h1><p id="heroText">One focused lesson at a time, with English-language videos and reading resources.</p><div class="stats"><span id="focusStat">20–30 min/day</span><span>40 days</span><span>English resources only</span><span>5 checkpoints</span></div></section>
+    <div class="day-nav" id="dayNav"><button id="prev">← Previous day</button><button id="next">Next day →</button></div>
     <article id="content">Loading course…</article>
     <div class="foot">Independent educational practice curriculum · Not an official STAGE Academy product</div>
   </main>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
-const content=document.getElementById('content'), sidebar=document.getElementById('sidebar');
+const content=document.getElementById('content'),sidebar=document.getElementById('sidebar'),heroTitle=document.getElementById('heroTitle'),heroText=document.getElementById('heroText');
 document.getElementById('menu').onclick=()=>sidebar.classList.toggle('open');
-const slug=t=>t.toLowerCase().replace(/&/g,' and ').replace(/[^\w\s-]/g,'').trim().replace(/\s+/g,'-');
-const renderer=new marked.Renderer();
-renderer.heading=function({tokens,depth}){const txt=this.parser.parseInline(tokens),plain=txt.replace(/<[^>]+>/g,'');return `<h${depth} id="${slug(plain)}">${txt}</h${depth}>`};
-marked.setOptions({renderer,gfm:true});
-async function load(file,hash){
-  const r=await fetch(`content/${file}`); content.innerHTML=marked.parse(await r.text());
-  document.querySelectorAll('[data-file]').forEach(a=>a.classList.toggle('active',a.dataset.file===file));
-  if(hash) history.replaceState(null,'','#'+hash); sidebar.classList.remove('open'); window.scrollTo(0,0);
-}
-document.querySelectorAll('[data-file]').forEach(a=>a.onclick=e=>{e.preventDefault();load(a.dataset.file,a.hash.slice(1))});
-document.querySelectorAll('nav a:not([data-file])').forEach(a=>a.onclick=async e=>{
-  e.preventDefault(); const id=a.hash.slice(1); if(!document.getElementById(id)) await load('PROGRAM.md','program');
-  setTimeout(()=>document.getElementById(id)?.scrollIntoView({behavior:'smooth'}),60); sidebar.classList.remove('open');
-});
-const page=location.hash.slice(1), map={resources:'RESOURCES.md',tracker:'TRACKER.md',sharing:'SHARING.md'};
-load(map[page]||'PROGRAM.md',page||'program').then(()=>{if(page&&!map[page]&&page!=='program')setTimeout(()=>document.getElementById(page)?.scrollIntoView(),80)});
+const resourceFixes={
+ 'https://www.youtube.com/watch?v=KwUe9i24KSA':{name:'National Theatre — Vocal Warm-Up #4: Articulation',url:'https://www.youtube.com/watch?v=uRdFtrv2yGA'},
+ 'https://www.youtube.com/watch?v=GOLhFUzlkm0':{name:'Cynthia Lin — Quick Vocal Warm Up: Vowel and Consonant Articulation',url:'https://www.youtube.com/watch?v=i0L_ufHoNrA'}
+};
+let program='',days=[],focus=localStorage.getItem('speakingFocus')||'both',currentDay=1;
+marked.setOptions({gfm:true});
+function makeDayNav(){for(let g=0;g<4;g++){const box=document.getElementById('days'+(g+1));for(let i=g*10+1;i<=g*10+10;i++){const a=document.createElement('a');a.href='#day-'+String(i).padStart(2,'0');a.dataset.day=i;a.textContent='Day '+String(i).padStart(2,'0');a.onclick=e=>{e.preventDefault();showDay(i)};box.appendChild(a)}}}
+function splitDays(md){const hits=[...md.matchAll(/^## Day (\d{2})\s+—\s+(.+)$/gm)];return hits.map((m,i)=>({num:+m[1],title:m[2],md:md.slice(m.index,(hits[i+1]?.index)||md.length)}))}
+function applyFocus(md){if(focus==='both')return md;const a=md.indexOf('### A ·'),b=md.indexOf('### B ·');if(a<0||b<0)return md;const header=md.slice(0,a);if(focus==='a')return header+md.slice(a,b).replace(/^### A ·/m,'### A ·');return header+md.slice(b).replace(/^### B ·/m,'### B ·')}
+function normalizeResources(root){root.querySelectorAll('a[href]').forEach(a=>{const fix=resourceFixes[a.href];if(fix){a.href=fix.url;a.textContent=fix.name}a.target='_blank';a.rel='noopener noreferrer'});enhanceResources(root)}
+function ytId(url){try{const u=new URL(url);if(u.hostname.includes('youtu.be'))return u.pathname.slice(1);if(u.hostname.includes('youtube.com'))return u.searchParams.get('v')}catch(e){}return null}
+function tedSlug(url){try{const u=new URL(url);const m=u.pathname.match(/^\/talks\/([^/?#]+)/);return m?.[1]||null}catch(e){return null}}
+function enhanceResources(root){root.querySelectorAll('a[href]').forEach(a=>{if(a.closest('.resource-card'))return;const url=a.href,id=ytId(url),ted=tedSlug(url);if(!id&&!ted)return;const li=a.closest('li')||a.parentElement;if(!li)return;const card=document.createElement('div');card.className='resource-card';const title=a.textContent;card.innerHTML=`<div class="rtype">English video</div><div><strong>${title}</strong></div><div class="open-row"><button type="button">▶ Play here</button><a href="${url}" target="_blank" rel="noopener noreferrer">Open in new tab ↗</a></div>`;card.querySelector('button').onclick=()=>{if(card.querySelector('.video-wrap'))return;const wrap=document.createElement('div');wrap.className='video-wrap';const src=id?`https://www.youtube.com/embed/${id}?rel=0`:`https://embed.ted.com/talks/${ted}`;wrap.innerHTML=`<iframe src="${src}" title="${title.replace(/"/g,'&quot;')}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;card.appendChild(wrap)};li.replaceWith(card)});
+ root.querySelectorAll('a[href]').forEach(a=>{if(a.closest('.resource-card'))return;const p=a.parentElement;if(!p)return;const url=a.href;if(url.startsWith(location.origin))return;const card=document.createElement('div');card.className='resource-card';card.innerHTML=`<div class="rtype">English reading / reference</div><div><a href="${url}" target="_blank" rel="noopener noreferrer">${a.textContent} ↗</a></div>`;p.replaceWith(card)})}
+function decorateTracks(){const hs=[...content.querySelectorAll('h3')];hs.forEach(h=>{if(/^A ·/.test(h.textContent))h.classList.add('track-a');if(/^B ·/.test(h.textContent))h.classList.add('track-b')})}
+function setFocus(f){focus=f;localStorage.setItem('speakingFocus',f);document.querySelectorAll('[data-focus]').forEach(b=>b.classList.toggle('active',b.dataset.focus===f));document.getElementById('focusStat').textContent=f==='both'?'20–30 min/day':'10–15 min/day';if(location.hash.startsWith('#day-'))showDay(currentDay,false)}
+function setActiveDay(n){document.querySelectorAll('[data-day]').forEach(a=>a.classList.toggle('active',+a.dataset.day===n));document.querySelectorAll('[data-file],[data-view]').forEach(a=>a.classList.remove('active'))}
+function showDay(n,push=true){currentDay=Math.max(1,Math.min(40,n));const d=days[currentDay-1];heroTitle.textContent='Day '+String(currentDay).padStart(2,'0')+' — '+d.title;heroText.textContent=focus==='a'?'Articulation focus · 10–15 minutes':focus==='b'?'STAGE focus · 10–15 minutes':'Complete both tracks · 20–30 minutes';content.innerHTML=marked.parse(applyFocus(d.md));normalizeResources(content);decorateTracks();setActiveDay(currentDay);document.getElementById('dayNav').classList.remove('hidden');document.getElementById('prev').disabled=currentDay===1;document.getElementById('next').disabled=currentDay===40;if(push)history.replaceState(null,'','#day-'+String(currentDay).padStart(2,'0'));sidebar.classList.remove('open');window.scrollTo(0,0)}
+function showHome(){heroTitle.textContent='40 Days to Clearer, Stronger Speaking';heroText.textContent='Choose Both, Articulation, or STAGE, then work through one focused day at a time.';content.innerHTML='<h1>Welcome</h1><p>This version of the course is intentionally divided into 40 focused lessons. Use the left navigation to open a day directly, or begin with Day 01.</p><h2>Choose your path</h2><p><strong>Both tracks</strong> gives the complete 20–30 minute program. <strong>A · Articulation</strong> shows only speech clarity mechanics. <strong>B · STAGE</strong> shows only strategic speaking and communication practice. Your selection is remembered on this device.</p><p><button onclick="showDay(1)" style="padding:10px 14px;border:0;border-radius:8px;background:#2457e6;color:#fff;font-weight:700;cursor:pointer">Start Day 01 →</button></p>';document.getElementById('dayNav').classList.add('hidden');document.querySelectorAll('[data-day],[data-file]').forEach(a=>a.classList.remove('active'));document.querySelector('[data-view="home"]').classList.add('active');history.replaceState(null,'','#home');window.scrollTo(0,0)}
+async function showFile(file,hash){const r=await fetch('content/'+file);content.innerHTML=marked.parse(await r.text());normalizeResources(content);heroTitle.textContent=hash==='resources'?'Resource Library':hash==='tracker'?'Progress Tracker':'Sharing & Group Use';heroText.textContent='Course reference material';document.getElementById('dayNav').classList.add('hidden');document.querySelectorAll('[data-day],[data-view]').forEach(a=>a.classList.remove('active'));document.querySelectorAll('[data-file]').forEach(a=>a.classList.toggle('active',a.dataset.file===file));history.replaceState(null,'','#'+hash);window.scrollTo(0,0)}
+document.querySelectorAll('[data-focus]').forEach(b=>b.onclick=()=>setFocus(b.dataset.focus));document.querySelector('[data-view="home"]').onclick=e=>{e.preventDefault();showHome()};document.querySelectorAll('[data-file]').forEach(a=>a.onclick=e=>{e.preventDefault();showFile(a.dataset.file,a.hash.slice(1))});document.getElementById('prev').onclick=()=>showDay(currentDay-1);document.getElementById('next').onclick=()=>showDay(currentDay+1);
+(async()=>{makeDayNav();setFocus(focus);const r=await fetch('content/PROGRAM.md');program=await r.text();days=splitDays(program);const h=location.hash.slice(1);if(/^day-\d{2}$/.test(h))showDay(+h.slice(4),false);else if(['resources','tracker','sharing'].includes(h)){const m={resources:'RESOURCES.md',tracker:'TRACKER.md',sharing:'SHARING.md'};showFile(m[h],h)}else showHome()})()
 </script>
 </body>
 </html>
